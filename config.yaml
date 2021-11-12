@@ -1,0 +1,43 @@
+url_v20: https://tipuat.sbi.co.in/ctixapi/ctix2/taxii/
+url_v21: https://tipuat.sbi.co.in/ctixapi/ctix21/taxii2/
+username: f3ed59fa-6284-4957-897e-ad11bb1ea7de
+password: 120ef2e1-428c-4ed3-8b4e-dad8e56f84cd
+path: /usr/local/etc/ruleengine/
+version: 2.1
+collections:
+    - CyWare:
+        - Blacklisted IP:
+            filename: blaclisted_ip.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+            updation: recreate
+        - ipv4-addr:
+            filename: ipv4-addr.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - ipv6-addr:
+            filename: ipv6-addr.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - url:
+            filename: url.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - E-mail:
+            filename: e_mail.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - MD5:
+            filename: md5.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - SHA1:
+            filename: sha1.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+        - domaiin:
+            filename: domain.txt
+            field: kill_chain_phases
+            filter: added_after >= 2023-01-28T21:33:10.772474Z
+
+        
